@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 .container {
-    display: flex;
+    display: flex ;
 }
 
 
@@ -58,3 +58,64 @@
 
 /* fim menu lateral */
 
+/* conteúdo principal */
+
+.content {
+    width: 100%;
+    padding: 60px 66px;
+}
+
+.container-card {
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1040px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 16px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.card:nth-child(2) .card-content:nth-child(1)::after {
+    content: '';
+    width: 1px;
+    height: 73px;
+    background-color: black;
+
+    margin: 0 25px;
+}
+
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-info {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 25px;
+}
+
+.card-info p { 
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.card-info h2 {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 64px;
+
+    color: #ffba33;
+}
