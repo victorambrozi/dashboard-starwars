@@ -62,16 +62,14 @@
 
 .content {
     width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
     padding: 60px 66px;
 }
 
 .container-card {
-    margin: 0 auto;
-    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-
-    max-width: 1040px;
 }
 
 .card {
