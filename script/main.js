@@ -1,3 +1,5 @@
+window.addEventListener("load", start);
+
 const personagensContador = document.querySelector("#personagens");
 const luasContador = document.querySelector("#luas");
 const planetasContador = document.querySelector("#planetas");
@@ -5,7 +7,7 @@ const navesContador = document.querySelector("#naves");
 
 function request(param) {
     return axios.get(`https://swapi.dev/api/${param}`);
-}
+};
 
 function preencherContadores() {
     Promise.all([
@@ -18,8 +20,15 @@ function preencherContadores() {
             luasContador.innerHTML = results[1].data.count;
             planetasContador.innerHTML = results[2].data.count;
             navesContador.innerHTML = results[3].data.count;
+        })
+        .catch( function(error) {
+            console.log(error);
         });
+        
 };
 
-preencherContadores();
 
+function start() {
+    animarContador();
+    preencherContadores();
+}
