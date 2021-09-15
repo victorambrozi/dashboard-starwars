@@ -17,7 +17,8 @@ export default function initChart() {
         var data = google.visualization.arrayToDataTable(dataArray);
 
         var options = {
-            title: 'My Daily Activities'
+            title: 'My Daily Activities',
+            legend: 'none'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
