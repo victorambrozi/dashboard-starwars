@@ -17,7 +17,7 @@ export default function initChart() {
         var data = google.visualization.arrayToDataTable(dataArray);
 
         var options = {
-            title: 'My Daily Activities',
+            title: 'Maiores veículos',
             legend: 'none'
         };
 
